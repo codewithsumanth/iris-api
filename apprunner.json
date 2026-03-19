@@ -1,0 +1,18 @@
+{
+  "ServiceName": "iris-api",
+  "SourceConfiguration": {
+    "ImageRepository": {
+      "ImageIdentifier": "713332526095.dkr.ecr.us-east-1.amazonaws.com/iris-api:v1",
+      "ImageConfiguration": { "Port": "8080" },
+      "ImageRepositoryType": "ECR"
+    },
+    "AuthenticationConfiguration": {
+      "AccessRoleArn": "arn:aws:iam::713332526095:role/AppRunnerECRAccessRole"
+    },
+    "AutoDeploymentsEnabled": false
+  },
+  "InstanceConfiguration": {
+    "Cpu": "0.25 vCPU",
+    "Memory": "0.5 GB"
+  }
+}
